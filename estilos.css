@@ -1,0 +1,86 @@
+/* CSS */
+:root{
+  /* ajusta si querés */
+  --banner-height-desktop: 60vh; /* altura en desktop */
+  --banner-height-mobile: 45vh;  /* altura en mobile */
+  --max-width: 1200px;
+}
+
+/* Contenedor del banner */
+.hero-banner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--banner-height-desktop);
+  min-height: 320px;
+  overflow: hidden;
+  background-image: url('./assets/python-Banner.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Capa overlay para contraste (ajustá el rgba) */
+.hero-overlay{
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.45) 100%);
+  pointer-events: none;
+}
+
+/* Contenido centrado y limitado en ancho */
+.hero-content{
+  position: relative; /* sobre el overlay */
+  z-index: 1;
+  width: 90%;
+  max-width: var(--max-width);
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Tipografía responsiva */
+.hero-content h1{
+  margin: 0 0 0.6rem;
+  line-height: 1.05;
+  font-weight: 700;
+  /* Fuente fluida: entre 1.6rem y 4rem */
+  font-size: clamp(1.6rem, 4vw + 0.5rem, 4rem);
+  text-wrap: balance;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.45); /* mejora lectura sobre la imagen */
+}
+
+/* Párrafo descriptivo */
+.hero-content p{
+  margin: 0;
+  font-size: clamp(0.95rem, 1.6vw + 0.2rem, 1.25rem);
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.45;
+  opacity: 0.95;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px){
+  .hero-banner{
+    height: var(--banner-height-mobile);
+  }
+  .hero-content{
+    padding: 1.25rem;
+  }
+  .hero-content p{
+    max-width: 44ch;
+  }
+}
+
+/* Si querés que el banner ocupe toda la pantalla (opcional) */
+/*
+.hero-banner.fullscreen {
+  height: 100vh;
+  min-height: 520px;
+}
+*/

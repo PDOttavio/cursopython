@@ -4,6 +4,7 @@ h1 {
     font-weight: 400;
     font-size: 3em;
     margin: 0;
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 p {
     font-family: 'Poppins', sans-serif;
@@ -11,13 +12,76 @@ p {
     font-size: 1.2em;
     line-height: 1.6;
     margin: 20px 0;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+
 }
 .header{
     background-image: url("./assets/banner-python.gif");
     background-size: cover;
     background-position: center;
     position: relative;
-    color: white;
+    color: rgb(247, 247, 249);
     text-align: center;
     padding: 100px 20px;
+}
+
+
+/* Estilos para la barra de navegación (navbar) */
+.navbar {
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Contenedor de la lista de ítems */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+}
+
+/* Estilos para los ítems de la lista */
+.nav-item {
+    padding: 2;
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 500;
+    position: right;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor (hover) */
+.nav-link:hover {
+    color: #626468;
+}
+
+/* Efecto de subrayado que aparece al pasar el cursor */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f7168e;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Opcional: Estilo para el ítem activo */
+.nav-link.active {
+    color: #ebfb03;
+    font-weight: 700;
 }

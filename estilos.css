@@ -29,7 +29,8 @@ p {
 /* Estilos para la barra de navegación (navbar) */
 .navbar {
     width: 100%;
-    padding: 5px 0;
+    padding: 5px 0px 0px 0px
+    px;
     text-align: center;
 }
 
@@ -37,21 +38,21 @@ p {
 .nav-list {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0px 0px 20px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     gap: 30px;
 }
 
 /* Estilos para los ítems de la lista */
 .nav-item {
-    padding: 2;
+    padding: 2,5px 0,5px 0;
 }
 
 /* Estilos para los enlaces */
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #252224ff;
     font-size: 1.1em;
     font-weight: 500;
     position: right;
@@ -60,7 +61,7 @@ p {
 
 /* Efecto al pasar el cursor (hover) */
 .nav-link:hover {
-    color: #626468;
+    color: #f7168e;
 }
 
 /* Efecto de subrayado que aparece al pasar el cursor */

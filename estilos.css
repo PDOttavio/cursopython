@@ -16,7 +16,7 @@ p {
 
 }
 .header{
-    background-image: url("./assets/banner-python.gif");
+    background-image: url("./assets/banner\ python.png");
     background-size: cover;
     background-position: center;
     position: relative;

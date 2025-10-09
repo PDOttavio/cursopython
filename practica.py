@@ -38,7 +38,7 @@ c=2.5 #float
 
 #combinar operaciones
 
-total = (a-b)**b
+#total = (a-b)**b
 #print("Calculo total", total)
 
 #age= input("Mi edad es ")
@@ -60,8 +60,40 @@ total = (a-b)**b
 #print ("La suma es: " + str(numero1 + numero2))
 
 #Area
-base=float (input("Ingresa la base del triangulo: "))
-altura=float (input("Ingresa la altura del triangulo: "))
-area=(base*altura)/2
-print ("El area del triangulo es: " + str(area))
+#base=float (input("Ingresa la base del triangulo: "))
+#altura=float (input("Ingresa la altura del triangulo: "))
+#area=(base*altura)/2
+#print ("El area del triangulo es: " + str(area))
+
+#elseif es generar una condicion mas al if
+
+"""nota=90
+if nota >= 90:
+    print("Su nota es excelente")
+elif nota >= 50:
+        print("Esta aprobado")
+else: print("Usted va a recuperatorio")
+    #combinamos condicionales con operadores logicos
+
+edad=20
+anotado_curso=True
+if edad >= 18 and anotado_curso:
+    print("Puede ingresar al curso")
+elif edad >= 18 and not anotado_curso: 
+        print("Es mayor pero no esta anotado")
+else: print("No puede ingresar al curso")
+
+#combinar condiciones con or y dos booleanos
+
+llueve=True
+tengo_paraguas=False
+if llueve or tengo_paraguas:
+    print("me mojo")
+else: print("no me mojo")"""
+
+#usar not invierte el valor de la condicion
+conectado=False
+if not conectado:
+    print("no estas conectado") 
+else: print("estas conectado")
 
